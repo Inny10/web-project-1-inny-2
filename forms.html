@@ -3,7 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Build Your Own Pagani</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>
+        <strong>
+          <u>Build Your Own Pagani</u>
+        </strong>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pagani.html">Pagani</a></li>
+          <li><a href="forms.html">Build Your Own Pagani</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <br />
+      <fieldset>
+        <legend><b>Customize Your Pagani</b></legend>
+        <form action="submit_form.php" method="POST">
+          <label for="model">Select Model:</label>
+          <select id="model" name="model">
+            <option value="zonda">Pagani Zonda</option>
+            <option value="huayra">Pagani Huayra</option>
+            <option value="utopia">Pagani Utopia</option>
+          </select>
+          <br />
+          <br />
+          <label for="color">Exterior Color:</label>
+          <input type="color" id="color" name="color" />
+          <br />
+          <br />
+          <label for="color">Interior Color:</label>
+          <input type="color" id="color" name="color" />
+          <br />
+          <br />
+          <label for="seat_color">Seat Color:</label>
+          <input type="color" id="seat_color" name="seat_color" />
+          <br />
+          <br />
+          <label for="wheels">Wheel Type:</label>
+          <select id="wheels" name="wheels">
+            <option value="standard">Standard</option>
+            <option value="sport">Sport</option>
+            <option value="track">Track</option>
+            <option value="winter">Winter</option>
+          </select>
+          <br />
+          <br />
+          <label for="Extra_Features"><b>Select Extra Features Below:</b></label
+          ><br /><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Carbon_Ceramic_Brakes" />
+          <label for="Extra_Features">Carbon Ceramic Brakes</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Premium_Paint_Finish" />
+          <label for="Extra_Features">Premium Paint Finish</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Custom_Interior_Trim" />
+          <label for="Extra_Features">Custom Interior Trim</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Advanced_Sound_System" />
+          <label for="Extra_Features">Advanced Sound System</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Performance_Exhaust" />
+          <label for="Extra_Features">Performance Exhaust</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Sport_Suspension" />
+          <label for="Extra_Features">Sport Suspension</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Driver_Assistance_Package" />
+          <label for="Extra_Features">Driver Assistance Package</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Luxury_Package" />
+          <label for="Extra_Features">Luxury Package</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="All_Tires" />
+          <label for="Extra_Features">All Tires</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Custom_Wheel_Designs" />
+          <label for="Extra_Features">Custom Wheel Designs</label><br />
+          <input
+            type="checkbox"
+            id="Extra_Features"
+            name="Extra_Features"
+            value="Insurance Package" />
+          <label for="Extra_Features">Insurance Package</label><br />
+          <br />
+          <input type="submit" value="Build My Pagani" />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="reset" value="Reset My Build" />
+        </form>
+      </fieldset>
+    </main>
+  </body>
 </html>
