@@ -23,6 +23,41 @@
     <main>
       <br />
       <fieldset>
+        <label for="fname">First name:</label>
+        <br />
+        <input type="text" id="fname" name="fname" />
+        <br />
+        <label for="lname">Last name:</label>
+        <br />
+        <input type="text" id="lname" name="lname" />
+        <br />
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" id="email" name="email" />
+        <br />
+        <label for="phone">Phone Number:</label>
+        <br />
+        <input type="tel" id="phone" name="phone" />
+        <br />
+        <label for="city">City:</label>
+        <br />
+        <input type="text" id="city" name="city" />
+        <br />
+        <label for="state">State:</label>
+        <br />
+        <input type="text" id="state" name="state" />
+        <br />
+        <label for="address">Address:</label>
+        <br />
+        <input type="text" id="address" name="address" />
+        <br />
+        <label for="zip">Zip Code:</label>
+        <br />
+        <input type="text" id="zip" name="zip" />
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
         <legend><b>Customize Your Pagani</b></legend>
         <form action="submit_form.php" method="POST">
           <label for="model">Select Model:</label>
@@ -122,6 +157,19 @@
             name="Extra_Features"
             value="Insurance Package" />
           <label for="Extra_Features">Insurance Package</label><br />
+          <input
+            type="checkbox"
+            id="delivery"
+            name="delivery"
+            value="home_delivery" />
+          <label for="delivery">Home Delivery</label><br />
+          <br />
+          <label for="comments">Additional Comments:</label><br />
+          <textarea
+            id="comments"
+            name="comments"
+            rows="10"
+            cols="50"></textarea>
           <br />
           <input type="submit" value="Build My Pagani" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
