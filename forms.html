@@ -13,6 +13,7 @@
         </strong>
       </h1>
       <nav>
+        <!-- Navigation links for the website -->
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="pagani.html">Pagani</a></li>
@@ -26,50 +27,86 @@
         <h2>Personal Information</h2>
         <!--I chose to use a fieldset to group related elements in a form-->
         <fieldset>
+          <!--The fieldset element groups related elements in a form-->
           <!--I chose to use a legend to provide a title for the fieldset-->
           <legend><b>Enter Your Personal Information Below:</b></legend>
-          <label for="fname">First name:</label>
-          <br />
-          <input type="text" id="fname" name="fname" />
-          <br />
-          <label for="lname">Last name:</label>
-          <br />
-          <input type="text" id="lname" name="lname" />
-          <br />
-          <label for="email">Email:</label>
-          <br />
-          <input type="email" id="email" name="email" />
-          <br />
-          <label for="phone">Phone Number:</label>
-          <br />
-          <input type="tel" id="phone" name="phone" />
-          <br />
-          <label for="city">City:</label>
-          <br />
-          <input type="text" id="city" name="city" />
-          <br />
-          <label for="state">State:</label>
-          <br />
-          <input type="text" id="state" name="state" />
-          <br />
-          <label for="address">Address:</label>
-          <br />
-          <input type="text" id="address" name="address" />
-          <br />
-          <label for="zip">Zip Code:</label>
-          <br />
-          <input type="text" id="zip" name="zip" />
-          <br />
+          <form id="customize-your-pagani" method="get">
+          <!--The form id uniquely identifies this form-->
+          <!-- This form collects information from the user and
+          when the submit button is pressed the data is sent because it uses the
+          using the "get" method. The "get" method sends form data in the URL. It is suitable for non-sensitive data,
+          but has limited data size and is not secure for private information.-->
+            <label for="fname">First name:</label>
+            <!--The for attribute links the label to the input with id="fname"-->
+            <br />
+            <input type="text" id="fname" name="fname" required />
+            <!-- "required" tag makes this field mandatory. The form will not submit until the user types something here.-->
+            <!--The input type text allows the user to enter a single line of text-->
+            <!--The id attribute is used to uniquely identify the input field and connect it to the label, while the name
+            attribute is used to reference the form data after it has been submitted-->
+            <br />
+            <label for="lname">Last name:</label>
+            <!-- The label describes the input field and is linked using the "for" attribute -->
+            <br />
+            <input type="text" id="lname" name="lname" required />
+            <!-- This text input allows the user to enter their last name -->
+            <!-- The id links the input to the label, and the name is used when submitting form data -->
+            <br />
+            <label for="email">Email:</label>
+            <!-- Label for the email input field -->
+            <br />
+            <input type="email" id="email" name="email" required />
+            <!-- The email input type ensures the value entered follows an email format -->
+            <!-- The name attribute is used to identify the email value in the submitted form -->
+            <br />
+            <label for="phone">Phone Number:</label>
+            <!-- Label associated with the phone number input -->
+            <br />
+            <input type="tel" id="phone" name="phone" required />
+            <!-- The tel input type is used for phone numbers -->
+            <!-- The name attribute is used to identify the phone number in the form submission -->
+            <br />
+            <label for="city">City:</label>
+            <!-- Label for the city input field -->
+            <br />
+            <input type="text" id="city" name="city" required/>
+            <!-- The input type "text" allows the user to enter their city -->
+            <!-- The name attribute is used to identify the city value in the submitted form -->
+            <br />
+            <label for="state">State:</label>
+            <!-- Label for the state input field -->
+            <br />
+            <input type="text" id="state" name="state" required />
+            <!-- The input type "text" allows the user to enter their state -->
+            <!-- The name attribute is used to identify the state value in the submitted form -->
+            <br />
+            <label for="address">Address:</label>
+            <!-- Label for the address input field -->
+            <br />
+            <input type="text" id="address" name="address" required />
+            <!-- The input type "text" allows the user to enter their address -->
+            <!-- The name attribute is used to identify the address value in the submitted form -->
+            <br />
+            <label for="zip">Zip Code:</label>
+            <!-- Label for the zip code input field -->
+            <br />
+            <input type="text" id="zip" name="zip" required />
+            <!-- The input type "text" allows the user to enter their zip code -->
+            <!-- The name attribute is used to identify the zip code value in the submitted form -->
+            <br />
         </fieldset>
       </section>
-      <br />
+        <br />
       <section>
+        <!--The section tag groups related content together-->
         <h2>Pagani Customization Options</h2>
         <fieldset>
           <legend><b>Customize Your Pagani</b></legend>
-          <form id="customize-pagani" method="get">
+          <!-- The legend is the title that explains what this fieldset is about -->
             <label for="model">Select Model:</label>
+            <!-- The select tag creates a dropdown list -->
             <select id="model" name="model">
+              <!-- The option tag gives the user a choice of models -->
               <option value="zonda">Pagani Zonda</option>
               <option value="huayra">Pagani Huayra</option>
               <option value="utopia">Pagani Utopia</option>
@@ -77,15 +114,16 @@
             <br />
             <br />
             <label for="color">Exterior Color:</label>
-            <input type="color" id="color" name="color" />
+            <input type="color" id="color" name="color"/>
             <br />
             <br />
             <label for="color">Interior Color:</label>
-            <input type="color" id="color" name="color" />
+            <input type="color" id="color" name="color"/>
             <br />
             <br />
             <label for="seat_color">Seat Color:</label>
-            <input type="color" id="seat_color" name="seat_color" />
+            <input type="color" id="seat_color" name="seat_color"/>
+            <!-- The input type color shows a color box that lets the user choose a color -->
             <br />
             <br />
             <label for="wheels">Wheel Type:</label>
@@ -100,6 +138,7 @@
             <label for="Extra_Features"
               ><b>Select Extra Features Below:</b></label
             ><br /><br />
+            <!-- The input type checkbox allows the user to select multiple options -->
             <input
               type="checkbox"
               id="Extra_Features"
@@ -174,20 +213,24 @@
             <label for="delivery">Home Delivery</label><br />
             <br />
             <label for="comments">Additional Comments:</label><br />
+            <!-- The textarea allows the user to enter multiple lines of text -->
             <textarea
               id="comments"
               name="comments"
               rows="10"
               cols="50"></textarea>
             <br />
+            <!-- The input type button sends all the answers in the form-->
             <input type="submit" value="Build My Pagani" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- The input type reset clears all the answers in the form-->
             <input type="reset" value="Reset My Build" />
           </form>
         </fieldset>
       </section>
     </main>
     <footer>
+      <!--The footer contains copyright information-->
       <p>
         <b>Disclaimer:</b> &copy; This is not a functioning website. 2026 Inny
         Ogundeji. All rights reserved.
